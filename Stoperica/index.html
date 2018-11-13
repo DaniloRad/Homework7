@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body,
+        html,
+        h1 {
+
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+
+            width: 60%;
+
+
+        }
+
+        .time {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100px;
+            background-color: bisque;
+            margin: auto;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .menubar {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .row {
+            height: 50px;
+            background-color: lightblue;
+            flex: 1;
+            line-height: 50px;
+            text-align: center;
+
+
+        }
+
+        .row:not(:first-child) {
+            border-left: 1px solid black;
+        }
+        .time {
+            display: none;
+        }
+        .buttons {
+            display: none;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="menubar">
+            <div class="row" id="pomodoro">Pomodoro</div>
+            <div class="row" id="short_break">Short Break</div>
+            <div class="row" id="long_break">Long Break</div>
+
+
+
+        </div>
+        <div class="time">
+            <h1 id="currTime">00:02</h1>
+        </div>
+        <div class="buttons"> 
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button></div>
+
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
